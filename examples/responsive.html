@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>Divy Examples</title>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="../lib/divy.js"></script>
+</head>
+<body>
+
+<h1>Non-Fixed Ratio Div Bitmaps</h1>
+
+<hr />
+
+<div id="example" class="divy"></div>
+
+<h1>Fixed Ratio Div Bitmaps</h1>
+
+<hr />
+
+<div id="exampleFixed" class="divy"></div>
+
+<style>
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.divy {
+  margin: 0 auto;
+  width: 100%;
+
+  /* Oh yes */
+  overflow: hidden;
+  resize: horizontal;
+}
+
+/* If it's not a fixed proportion divy, it needs a height. */
+#example {
+  height: 100px;
+}
+
+</style>
+
+<script>
+
+// Once the DOM is ready, apply the bitmap to the #example div.
+$(function() {
+  $('#example').divy([
+    ['orange', 'green', 'pink'],
+    ['pink', 'green', 'pink'],
+    ['orange', 'pink', 'orange'],
+  ]);
+
+  $('#exampleFixed').divy([
+    ['orange', 'green', 'pink'],
+    ['pink', 'green', 'pink'],
+    ['orange', 'pink', 'orange'],
+  ], { 'ratio' : 'fixed' });
+});
+
+</script>
+
+</body>
+</html>
