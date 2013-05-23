@@ -13,6 +13,10 @@ h1 {
   margin: 0 auto;
 }
 
+.info pre {
+  background-color: #eee;
+}
+
 h2 {
   margin: 10px 0;
   padding-left: 20px;
