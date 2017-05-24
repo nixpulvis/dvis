@@ -1,11 +1,11 @@
 $(function() {
-  $('#example').divy([
+  $('#example').dvis([
     ['orange', 'green', 'pink'],
     ['pink', 'green', 'pink'],
     ['orange', 'pink', 'orange'],
   ]);
 
-  $('#exampleFixed').divy([
+  $('#exampleFixed').dvis([
     ['orange', 'green', 'pink'],
     ['pink', 'green', 'pink'],
     ['orange', 'pink', 'orange'],
