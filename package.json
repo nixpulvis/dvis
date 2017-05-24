@@ -1,0 +1,26 @@
+{
+  "name": "dvis",
+  "version": "0.0.9",
+  "description": "Div Matrices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nixpulvis/divy.git"
+  },
+  "keywords": [
+    "div",
+    "drawing"
+  ],
+  "author": "Nathan Lilienthal <nathan@nixpulvis.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nixpulvis/divy/issues"
+  },
+  "homepage": "https://github.com/nixpulvis/divy#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

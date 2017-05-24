@@ -1,19 +1,19 @@
 <!doctype html>
 <html>
 <head>
-  <title>Divy Examples</title>
+  <title>Dvis Examples</title>
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="../lib/divy.js"></script>
+  <script src="../index.js"></script>
 </head>
 <body>
 
-<h1>Divy Bitmaps</h1>
+<h1>Dvis Bitmaps</h1>
 
 <div id="example"></div>
 
 <pre><code>$(function() {
 
-  $('#example').divy([
+  $('#example').dvis([
     ['#aa0201', '#dd0302', '#aa0201'],
     ['#dd0302', '#ff0000', '#dd0302'],
     ['#aa0201', '#dd0302', '#aa0201'],
@@ -46,7 +46,7 @@ pre {
   height: 100px;
 }
 
-#example .divy-overlay:hover {
+#example .dvis-overlay:hover {
   background-color: rgba(0,0,0,.5);
 }
 
@@ -57,7 +57,7 @@ pre {
 // Once the DOM is ready, apply the bitmap to the #example div.
 $(function() {
 
-  $('#example').divy([
+  $('#example').dvis([
     ['#aa0201', '#dd0302', '#aa0201'],
     ['#dd0302', '#ff0000', '#dd0302'],
     ['#aa0201', '#dd0302', '#aa0201'],

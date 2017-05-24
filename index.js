@@ -1,8 +1,8 @@
 (function($) {
 
-  var Divy = {};
+  var Dvis = {};
 
-  Divy.create = function(bitmap, options) {
+  Dvis.create = function(bitmap, options) {
     var container, row, div, overlay, color;
 
     // Default options.
@@ -11,7 +11,7 @@
     // If the fixed option is set, append another container div to
     // the selected element to constrain proportions.
     if (options['ratio'] == 'fixed') {
-      container = Divy.fixed(this, bitmap.length / bitmap[0].length);
+      container = Dvis.fixed(this, bitmap.length / bitmap[0].length);
     } else {
       container = this;
     }
@@ -24,7 +24,7 @@
 
         // Div.
         div = document.createElement('div');
-        div.className = 'divy-div';
+        div.className = 'dvis';
         div.style.width  = (100 / row.length) + '%';
         div.style.height = (100 / bitmap.length) + '%';
         div.style.cssFloat  = 'left';
@@ -32,7 +32,7 @@
 
         // Overlay.
         overlay = document.createElement('div');
-        overlay.className = 'divy-overlay';
+        overlay.className = 'dvis-overlay';
         overlay.style.width  = '100%';
         overlay.style.height = '100%';
 
@@ -46,7 +46,7 @@
   }
 
   // ratio is height / width
-  Divy.fixed = function(selection, ratio) {
+  Dvis.fixed = function(selection, ratio) {
     selection.css('position', 'relative');
     selection.css('padding-top', ratio * 100 + '%');
 
@@ -61,7 +61,7 @@
     return $(container);
   }
 
-  // Export "Divy" to jQuery.
-  $.fn.divy = Divy.create;
+  // Export "Dvis" to jQuery.
+  $.fn.dvis = Dvis.create;
 
 }(jQuery));
