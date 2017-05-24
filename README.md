@@ -1,3 +1,5 @@
-# Divy
+# `$.dvis(...)`
 
-Docs to be written.
+Create div bitmap images with easy. See `examples/` for more info.
+
+TODO: Example here.

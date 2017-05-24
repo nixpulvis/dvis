@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nixpulvis/divy.git"
+    "url": "git+https://github.com/nixpulvis/dvis.git"
   },
   "keywords": [
     "div",
@@ -17,9 +17,9 @@
   "author": "Nathan Lilienthal <nathan@nixpulvis.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nixpulvis/divy/issues"
+    "url": "https://github.com/nixpulvis/dvis/issues"
   },
-  "homepage": "https://github.com/nixpulvis/divy#readme",
+  "homepage": "https://github.com/nixpulvis/dvis#readme",
   "dependencies": {
     "jquery": "^3.2.1"
   }
